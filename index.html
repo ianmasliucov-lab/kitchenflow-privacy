@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>KitchenFlow — Политика конфиденциальности</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,600;0,700;1,500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+  :root {
+    --bg: #F5F6F4;
+    --surface: #FFFFFF;
+    --border: #E0E4DD;
+    --text: #1B1F1A;
+    --text-muted: #5A6156;
+    --text-faint: #8C9286;
+    --accent: #3D6B4C;
+    --accent-soft: rgba(61,107,76,0.08);
+    --accent-line: rgba(61,107,76,0.35);
+    --serif: 'Lora', Georgia, 'Times New Roman', serif;
+    --sans: 'IBM Plex Sans', -apple-system, 'Segoe UI', sans-serif;
+    --mono: 'IBM Plex Mono', ui-monospace, 'SFMono-Regular', monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #141713; --surface: #1B1F1A; --border: #2B302A;
+      --text: #ECEFEA; --text-muted: #A2A99C; --text-faint: #6C7266;
+      --accent: #7FBB92; --accent-soft: rgba(127,187,146,0.12); --accent-line: rgba(127,187,146,0.4);
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #141713; --surface: #1B1F1A; --border: #2B302A;
+    --text: #ECEFEA; --text-muted: #A2A99C; --text-faint: #6C7266;
+    --accent: #7FBB92; --accent-soft: rgba(127,187,146,0.12); --accent-line: rgba(127,187,146,0.4);
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font-family: var(--sans); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+  .page { max-width: 760px; margin: 0 auto; padding: 56px 24px 96px; }
+  .masthead { display: flex; align-items: center; gap: 16px; padding-bottom: 28px; border-bottom: 1px solid var(--border); margin-bottom: 36px; }
+  .mark { width: 46px; height: 46px; border-radius: 11px; background: var(--accent); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .mark svg { width: 26px; height: 26px; }
+  .brandblock { flex: 1; min-width: 0; }
+  .brandname { font-family: var(--serif); font-weight: 700; font-size: 21px; letter-spacing: 0.2px; }
+  .brandsub { font-family: var(--mono); font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-faint); margin-top: 2px; }
+  .effdate { text-align: right; font-size: 12.5px; color: var(--text-faint); line-height: 1.5; }
+  .effdate strong { color: var(--text-muted); font-weight: 600; }
+  h1 { font-family: var(--serif); font-size: 30px; font-weight: 700; margin: 0 0 14px; text-wrap: balance; }
+  .lede { color: var(--text-muted); font-size: 15px; margin: 0 0 32px; max-width: 62ch; }
+  nav.toc { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 18px 22px; margin-bottom: 40px; }
+  .toc-label { font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-faint); margin-bottom: 10px; }
+  nav.toc ol { margin: 0; padding-left: 20px; columns: 2; column-gap: 24px; }
+  nav.toc li { margin-bottom: 6px; font-size: 13.5px; }
+  nav.toc a { color: var(--text-muted); text-decoration: none; }
+  nav.toc a:hover { color: var(--accent); }
+  section { margin-bottom: 34px; scroll-margin-top: 20px; }
+  h2 { font-family: var(--serif); font-size: 19px; font-weight: 700; display: flex; align-items: baseline; gap: 12px; margin: 0 0 12px; }
+  .num { font-family: var(--mono); font-size: 12px; color: var(--accent); border: 1px solid var(--accent-line); background: var(--accent-soft); border-radius: 6px; padding: 2px 7px; }
+  p { margin: 0 0 12px; font-size: 14.5px; }
+  ul.plain { margin: 0 0 12px; padding-left: 20px; }
+  ul.plain li { margin-bottom: 6px; font-size: 14.5px; }
+  .tablewrap { border: 1px solid var(--border); border-radius: 10px; overflow: hidden; margin: 4px 0 14px; }
+  table.datatable { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+  table.datatable th, table.datatable td { padding: 10px 14px; text-align: left; border-bottom: 1px solid var(--border); vertical-align: top; }
+  table.datatable th { background: var(--surface); color: var(--text-faint); font-weight: 600; font-size: 11.5px; letter-spacing: 0.04em; text-transform: uppercase; }
+  table.datatable tr:last-child td { border-bottom: none; }
+  table.datatable td { background: var(--surface); }
+  strong { color: var(--text); }
+  footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--border); color: var(--text-faint); font-size: 12.5px; }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="masthead">
+    <div class="mark">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5V4.5h15.5"/><path d="M4 12h9v7.5"/></svg>
+    </div>
+    <div class="brandblock">
+      <div class="brandname">KitchenFlow</div>
+      <div class="brandsub">Kitchen Design Planner</div>
+    </div>
+    <div class="effdate">Действует с<br><strong>23 сентября 2026</strong></div>
+  </div>
+
+  <h1>Политика конфиденциальности</h1>
+  <p class="lede">KitchenFlow — приложение для проектирования коммерческих кухонь: план помещения, расстановка оборудования, проверка потоков и экспорт списков. Здесь простыми словами написано, какие данные оно собирает и зачем.</p>
+
+  <nav class="toc">
+    <div class="toc-label">Содержание</div>
+    <ol>
+      <li><a href="#scope">Кого касается эта политика</a></li>
+      <li><a href="#data">Какие данные мы собираем</a></li>
+      <li><a href="#permissions">Разрешения приложения</a></li>
+      <li><a href="#use">Как используются данные</a></li>
+      <li><a href="#storage">Где хранятся данные</a></li>
+      <li><a href="#rights">Удаление данных</a></li>
+      <li><a href="#children">Дети</a></li>
+      <li><a href="#changes">Изменения политики</a></li>
+      <li><a href="#contact">Контакты</a></li>
+    </ol>
+  </nav>
+
+  <section id="scope">
+    <h2><span class="num">01</span>Кого касается эта политика</h2>
+    <p>KitchenFlow не требует регистрации, аккаунта, email или номера телефона. Приложением может пользоваться кто угодно — не только именно вы; в нём нет ролей или прав доступа. Эта политика распространяется на любого, кто устанавливает и использует приложение.</p>
+  </section>
+
+  <section id="data">
+    <h2><span class="num">02</span>Какие данные мы собираем</h2>
+    <p>Мы не собираем персональные данные при установке или запуске приложения. Единственное, что оказывается в приложении, — это то, что вы сами вводите при работе с проектом кухни:</p>
+    <div class="tablewrap">
+      <table class="datatable">
+        <tr><th>Категория</th><th>Что именно</th></tr>
+        <tr><td>Данные проекта</td><td>название объекта, размеры помещения, расстановка оборудования, комнаты и стены — вводятся вручную или рисуются на плане</td></tr>
+        <tr><td>Фото плана (опционально)</td><td>если вы используете «Загрузить фото плана» или «Начертить план» с фото-подложкой — фотография или изображение из галереи устройства</td></tr>
+        <tr><td>Текст меню (опционально)</td><td>если вы используете AI-калькулятор меню — текст, который вы вставляете или вводите для анализа</td></tr>
+      </table>
+    </div>
+    <p>Всё это касается только устройства — мы не просим имя, email, телефон или платёжные данные ни для одной из функций приложения.</p>
+  </section>
+
+  <section id="permissions">
+    <h2><span class="num">03</span>Разрешения приложения</h2>
+    <p>Приложение запрашивает доступ к камере и галерее — только чтобы вы могли сфотографировать или выбрать изображение плана кухни для функции «Загрузить фото плана». Разрешение запрашивается системой в момент, когда вы сами открываете эту функцию, не заранее и не фоном.</p>
+  </section>
+
+  <section id="use">
+    <h2><span class="num">04</span>Как используются данные</h2>
+    <p>Расстановка оборудования, размеры и комнаты используются самим приложением локально — чтобы отрисовать план, проверить потоки/зазоры и посчитать примерную мощность оборудования. Эти данные никуда не отправляются.</p>
+    <p>Две функции отправляют данные за пределы устройства, и только когда вы сами их запускаете:</p>
+    <ul class="plain">
+      <li><strong>«Распознать план по фото»</strong> — фотография плана отправляется в облачную функцию (Firebase Cloud Functions), которая передаёт её сервису искусственного интеллекта (Anthropic Claude) для распознавания контура стен и подписанных размеров.</li>
+      <li><strong>«AI-калькулятор меню»</strong> — введённый текст меню отправляется тем же способом тому же AI-сервису, чтобы предложить список оборудования и черновик инвентаризации.</li>
+    </ul>
+    <p>В обоих случаях фото или текст используются только для того, чтобы обработать именно этот запрос и вернуть результат в приложение — мы не храним их на своих серверах после ответа (см. следующий раздел), не используем для рекламы и не передаём никому, кроме этого одного AI-провайдера, необходимого для самой функции.</p>
+  </section>
+
+  <section id="storage">
+    <h2><span class="num">05</span>Где хранятся данные</h2>
+    <p>Все ваши проекты — план, комнаты, расстановка оборудования — хранятся <strong>локально на вашем устройстве</strong> и не синхронизируются ни с каким сервером. Мы не храним копию ваших проектов у себя.</p>
+    <p>Фото плана и текст меню передаются в момент запроса (см. раздел 04) для обработки и не сохраняются постоянно ни в самой облачной функции, ни в базе данных проекта — после ответа запрос завершается.</p>
+  </section>
+
+  <section id="rights">
+    <h2><span class="num">06</span>Удаление данных</h2>
+    <p>Удалить проект можно прямо в приложении, кнопкой «Удалить» в списке проектов — данные стираются с устройства немедленно и безвозвратно. Поскольку копии на сервере не существует, никаких дополнительных действий с нашей стороны не требуется. Удаление самого приложения также удаляет все локально хранящиеся проекты.</p>
+  </section>
+
+  <section id="children">
+    <h2><span class="num">07</span>Дети</h2>
+    <p>KitchenFlow — профессиональный инструмент для проектировщиков и владельцев коммерческих кухонь (кафе, рестораны, дарк-кухни) и не предназначен для детей младше 16 лет. Мы сознательно не собираем данные детей.</p>
+  </section>
+
+  <section id="changes">
+    <h2><span class="num">08</span>Изменения политики</h2>
+    <p>Если политика изменится существенно, дата в шапке этой страницы будет обновлена. Продолжая пользоваться приложением после изменений, вы соглашаетесь с новой редакцией.</p>
+  </section>
+
+  <section id="contact">
+    <h2><span class="num">09</span>Контакты</h2>
+    <p>По вопросам о данных или конфиденциальности: <strong>ianmasliucov@gmail.com</strong>.</p>
+  </section>
+
+  <footer>KitchenFlow — планировщик кухонь для HoReCa.</footer>
+</div>
+</body>
+</html>
